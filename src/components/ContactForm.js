@@ -11,7 +11,7 @@ const ContactForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/api/contact', formData);
+            const response = await axios.post('https://stockmarket-landing-page.onrender.com/api/contact', formData);
             setResponseMessage(response.data.message);
 
             // Clear the form after successful submission
